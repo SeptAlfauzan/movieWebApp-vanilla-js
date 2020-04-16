@@ -15,42 +15,69 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>U-Movie</title>
   </head>
   <body class="bg-black text-white">
     <div class="col-md-8 col-12 m-auto p-0 pt-5">
-        <h1 class="text-center">Simple Movie App</h1>
-        <form id="search-box" class="form-inline col-12 justify-content-center mb-3">
-            <input id="search-input" class="form-control badge-pill bg-black btn-outline-dark col-md-6 col-8 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger badge-pill my-2 my-sm-0" type="submit">search</button>
-        </form>
-        <div class="d-flex col-12 mt-5 row movies-container m-auto">
-          
-
-
-          
-        </div>
-        <!-- Button trigger modal -->
-            <div class="modal fade" id="movieDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div id="content-detail"></div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
+      <h1 class="text-center">Simple Movie App</h1>
+      <form
+        id="search-box"
+        class="form-inline col-12 justify-content-center mb-3"
+      >
+        <input
+          id="search-input"
+          class="form-control badge-pill bg-black btn-outline-dark col-md-6 col-8 mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-danger badge-pill my-2 my-sm-0" type="submit">
+          search
+        </button>
+      </form>
+      <div id="movies-container" class="d-flex col-12 mt-5 row m-auto"></div>
+      <!-- Button trigger modal -->
+      <div
+        class="modal fade"
+        id="movieDetail"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Modal title
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-
+            <div id="content-detail"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
